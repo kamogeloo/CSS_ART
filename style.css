@@ -22,6 +22,7 @@ body{
     --top: rgb(3, 26, 39);
     --eyebrow: #401e09;
   position: relative;
+  overflow-y: hidden;
 }
 
 div{
@@ -39,6 +40,7 @@ div{
 
 }
 .art{
+    margin-top: 10%;
     width: 100%;
     height: 100%;
     filter: drop-shadow(3px 2px 8px var(--shadow));
@@ -54,7 +56,7 @@ div{
   background-color: var(--hair);
    width: 20em;
    height: 20em;
-   box-shadow: inset 10px 2px 150px 10px purple;
+   box-shadow: inset 10px 2px 150px 10px var(--hair);
    border-radius: 15%;
    border: 0px solid transparent;
 }
@@ -103,14 +105,14 @@ div{
     box-shadow: rgba(142, 41, 41, 0.2) 0px 2px 8px 0px;
     z-index: 1;
 }
-/* .fringe{
+.fringe{
     width: 6em;
     height: 3em;
     left: 10%;
     top: -30%;
     border-bottom: 100px solid var(--hair);
     border-radius: 100%;
-} */
+}
 
 .eyebrow-left{
     width: 3em;
