@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    background: var(--backgroundColor);
+
+    --backgroundColor: #FF7BAE; 
+    --skin: #B24713;
+    --hair: #653a88;
+    --hair1: #652D92;
+    --hairDye: #ed1e79;
+    --earring: #fdaa24;
+    --top: rgb(3, 26, 39);
+    --eyebrow: #401e09;
+  position: relative;
+}
+
+div{
+    position: absolute;
+}
+
+.character {
+ height: 30em;
+ width: 40em;
+ background: var(--backgroundColor);
+ top: -20%;
+ left: 50%;
+ transform: translate(-50%, 50%);
+ box-shadow: 10px 10px 10px 0px var(--ha);
+
+}
+/*hair styles*/
+
+.character .hair,
+ .hair-shape-layer,
+ .hair-shape-layer1,
+ .hair-shape-layer2,
+ .hair-shape-layer::before,
+ .hair-shape-layer::after{
+  background-color: var(--hair);
+   width: 20em;
+   height: 20em;
+   box-shadow: inset 10px 2px 100px 0px purple;
+   border-radius: 15%;
+   border: 0px solid transparent;
+}
+
+
+.character .hair{
+    top: 10%;
+    left: 23%;
+    transform: rotate(14deg);
+
+}
+.hair-shape-layer{
+
+
+    transform: rotate(18deg);
+}
+.hair-shape-layer1{
+    transform: rotate(27deg);
+  
+}
+.hair-shape-layer2{
+
+    transform: rotate(38deg);
+    
+}
+
+.hair-shape-layer::before{
+    content: "";
+    position: absolute;
+    transform: rotate(42deg);
+}
+.hair-shape-layer::after{
+    content: "";
+    position: absolute;
+    transform: rotate(-35deg);
+}
+/*face shape*/
+.face-shape{
+    background-color: var(--skin);
+    position: absolute;
+    width: 10.5em;
+    height: 13em;
+    top: 24%;
+    left: 35.5%;
+    border-radius: 50%;
+    box-shadow: rgba(142, 41, 41, 0.2) 0px 2px 8px 0px;
+    z-index: 1;
+}
+/* .fringe{
+    width: 6em;
+    height: 3em;
+    left: 10%;
+    top: -30%;
+    border-bottom: 100px solid var(--hair);
+    border-radius: 100%;
+} */
+
+.eyebrow-left{
+    width: 3em;
+    height: 2em;
+    border-radius: 100% 50%;
+    border-top: 15px solid var(--eyebrow);
+    top: 23%;
+    left: 8%;
+    transform: rotate(15deg);
+    
+}
+.face-shadow{
+    width: 8em;
+    height: 13em;
+    left: .5%;
+    top: 1%;
+    box-shadow: inset 10px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 100% 100%;
+    transform: rotate(-10deg);
+
+}
+
+.eyebrow-right{
+    width: 3em;
+    height: 2em;
+    border-radius: 50% 100%;
+    border-top: 15px solid var(--eyebrow);
+    top: 23%;
+    left: 60%;
+    transform: rotate(-15deg);
+}
+
+.glasses-left{
+    width: 5em;
+    height: 4.5em;
+    top: 30%;
+    left: 0%;
+    transform: rotate(-5deg);
+    border-top: 10px solid var(--hairDye);
+    border-radius: 10% 100% 100% 100%;
+    background: var(--top);
+}
+.glasses-right{
+    width: 5em;
+    height: 4.5em;
+    top: 30%;
+    left: 55%;
+    transform: rotate(5deg);
+    border-top: 10px solid var(--hairDye);
+    border-radius: 100% 10% 100% 100%;
+    background: var(--top);
+}
+
+.glasses-middle-part{
+    width: 2em;
+    height: .8em;
+    left: 40%;
+    top: 40%;
+    border-radius: 50%;
+    box-shadow: inset -12px 5px 3px 6px var(--top);
+}
+.nostril-left{
+    width: .6em;
+    height: .4em;
+    top: 63%;
+    left: 40%;
+    background: var(--eyebrow);
+    border-radius: 50% 50% 0% 0%;
+}
+.nostril-right{
+    width: .6em;
+    height: .4em;
+    top: 63%;
+    left: 53%;
+    background: var(--eyebrow);
+    border-radius: 50% 50% 0% 0%;
+}
+
+.top-lip{
+    width: 4em;
+    height: 3em;
+    top: 70%;
+    left: 29%;
+    border-top: 20px solid var(--eyebrow);
+    border-radius: 100% 100%;
+    
+}
+
+.bottom-lip{
+    width: 4em;
+    height: 1em;
+    top: 77.5%;
+    left: 29%;
+    border-bottom: 20px solid var(--eyebrow);
+    border-radius: 50% 50%;
+    
+}
+
+
+.ear-left,
+.ear-right{
+    background-color: var(--skin);
+    width: 3em;
+    height: 4em;
+    top: 45%;
+    left: 33%;
+    transform: rotate(-10deg);
+    border-radius: 40% 70% 90% 90%;
+}
+
+.ear-right{
+    left: 57%;
+    transform: rotate(8deg);
+    border-radius: 70% 40% 90% 90%;
+}
+
+.earring-left,
+.earring-right{
+
+    background-color: transparent;
+    width: 3em;
+    height: 3em;
+    top: 55%;
+    border-radius: 100%;
+    border-left: 20px solid var(--earring);
+    box-shadow: 10px 0px 10px 3px rgba(255, 162, 0, 0.881);
+}
+.earring-left{
+    left: 34%;
+}
+
+.earring-right{
+    left: 56%;
+    transform: rotate(180deg);
+}
+
+.neck{
+    width: 8em;
+    height: 3em; 
+    top: 58%;
+    left: 38.5%;
+    border-bottom: 150px solid var(--skin);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+
+.neck-shadow{
+    width: 5.6em;
+    height: 7em;
+    left: 40%;
+    top: 62%;
+    box-shadow: inset 10px 20px 20px 0px rgba(0, 0, 0, 0.25);
+    transform: rotate(10deg);
+    z-index: 0;
+}
+
+.turtle-neck{
+
+    width: 9em;
+    height: 1.5em;
+    top: 82%;
+    left: 37%;
+    border-bottom: 90px solid var(--top);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.shoulders{
+    width: 16em;
+    height: 4em;
+    top: 88%;
+    left: 28%;
+   border-top: 100px solid var(--top);
+   border-radius: 100% 100%;
+
+   
+}
+
+@media screen and (max-width: 700px) {
+    div{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    
+        
+    }
+   
+    
+}
