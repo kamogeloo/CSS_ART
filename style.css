@@ -48,7 +48,7 @@ div{
   background-color: var(--hair);
    width: 20em;
    height: 20em;
-   box-shadow: inset 10px 2px 100px 0px purple;
+   box-shadow: inset 10px 2px 150px 10px purple;
    border-radius: 15%;
    border: 0px solid transparent;
 }
